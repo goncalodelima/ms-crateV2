@@ -1,0 +1,24 @@
+1:
+  identifier: "normal"
+  item:
+    material: "TRIPWIRE_HOOK"
+    data: 0
+    name: "&aChave Normal"
+    lore:
+      - "&7Abra esta chave e consiga"
+      - "&7itens bastante raros!"
+  rewards:
+    - "REWARD-1"
+    - "REWARD-2"
+2:
+  identifier: "legendary"
+  item:
+    material: "TRIPWIRE_HOOK"
+    data: 0
+    name: "&6Chave Lendária"
+    lore:
+      - "&7Abra esta chave e consiga"
+      - "&7itens bastante raros!"
+  rewards:
+    - "REWARD-1"
+    - "REWARD-2"

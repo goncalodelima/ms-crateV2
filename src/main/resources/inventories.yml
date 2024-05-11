@@ -1,0 +1,200 @@
+general:
+  title: "Chaves"
+  size: 6
+  layout:
+    - "         "
+    - "  CCL T  "
+    - "  LLL F  "
+    - "  LLL R  "
+    - "         "
+    - "   A     "
+  crate:
+    lore:
+      - ""
+      - " &7Você possui &f{amount} &7chaves."
+  lock:
+    material: "BARRIER"
+    data: 0
+    amount: 1
+    name: "&cBloqueado"
+    glow: false
+  filter:
+    material: "HOPPER"
+    data: 0
+    amount: 1
+    name: "&eItens filtrados"
+    lore:
+      - "&7Clique para gerenciar"
+      - "&7os &f{amount} &7itens filtrados."
+  open:
+    material: "STORAGE_MINECART"
+    data: 0
+    amount: 1
+    name: "&eAbrir chaves"
+    lore:
+      - "&7Clique aqui para abrir"
+      - "&7todas as suas &f{amount} &7chaves!"
+  reward:
+    material: "EMERALD"
+    data: 0
+    amount: 1
+    name: "&eSuas Recompensas"
+    lore:
+      - "&7Clique aqui para visualizar"
+      - "&7as suas recompensas."
+  top:
+    material: "BOOK"
+    data: 0
+    amount: 1
+    name: "&eAbrir ranking"
+    lore:
+      - "&7Clique aqui para visualizar"
+      - "&7os que abriram mais crates."
+
+user-reward:
+  title: "Suas Recompensas"
+  size: 5
+  layout:
+    - "         "
+    - " OOOOOOO "
+    - " OOOOOOO "
+    - "         "
+    - "<   C   >"
+  item:
+    lore:
+      - ""
+      - "&7Quantia: &f{amount}"
+      - "&eClique para coletar"
+  advance:
+    material: "ARROW"
+    data: 0
+    name: "&aAvançar"
+  back:
+    material: "ARROW"
+    data: 0
+    name: "&cAnterior"
+  close:
+    material: "BARRIER"
+    data: 0
+    name: "&cFechar"
+  empty:
+    material: "WEB"
+    data: 0
+    name: "&eVazio"
+    slot: 22
+
+filter:
+  title: "Filtro"
+  size: 5
+  layout:
+    - "         "
+    - "  IIIII  "
+    - "  IIIII  "
+    - "         "
+    - "<   C   >"
+  item:
+    lore:
+      - ""
+      - " &cClique para remover do filtro"
+  empty:
+    material: "WEB"
+    data: 0
+    name: "&eVazio"
+    slot: 22
+  advance:
+    material: "ARROW"
+    data: 0
+    name: "&aAvançar"
+  back:
+    material: "ARROW"
+    data: 0
+    name: "&cAnterior"
+  close:
+    material: "BARRIER"
+    data: 0
+    name: "&cFechar"
+
+reward:
+  title: "Recompensas"
+  size: 5
+  layout:
+    - "         "
+    - " OOOOOOO "
+    - " OOOOOOO "
+    - "         "
+    - "< R C A >"
+  advance:
+    material: "ARROW"
+    data: 0
+    name: "&aAvançar"
+  back:
+    material: "ARROW"
+    data: 0
+    name: "&cAnterior"
+  close:
+    material: "BARRIER"
+    data: 0
+    name: "&cFechar"
+  in-filter:
+    - ""
+    - " &cClique para remover do filtro"
+  out-filter:
+    - ""
+    - " &aClique para adicionar ao filtro"
+  collect:
+    material: "TRIPWIRE_HOOK"
+    data: 0
+    amount: 1
+    name: "&eRetirar chaves"
+    lore:
+      - "&7Receba a chave em"
+      - "&7seu inventário."
+      - ""
+      - " &8» &f{amount} &7chaves"
+      - ""
+      - "&fBotão esquerdo: &764 chaves"
+      - "&fBotão direito: &71 chave"
+      - "&fBotão Q: &7Todas as chaves"
+  open:
+    material: "STORAGE_MINECART"
+    data: 0
+    amount: 1
+    name: "&eAbrir chaves"
+    lore:
+      - "&7Abra as chaves e"
+      - "&7receba as recompensas."
+      - ""
+      - " &8» &f{amount} &7chaves"
+      - ""
+      - "&fBotão esquerdo: &764 chaves"
+      - "&fBotão direito: &71 chave"
+      - "&fBotão Q: &7Todas as chaves"
+
+ranking:
+  size: 5
+  title: "Ranking de crates abertas"
+  layout:
+    - "         "
+    - " OOOOOOO "
+    - "   OOO   "
+    - "         "
+    - "<   C   >"
+  advance:
+    material: "ARROW"
+    data: 0
+    name: "&aAvançar"
+  back:
+    material: "ARROW"
+    data: 0
+    name: "&cAnterior"
+  close:
+    material: "BARRIER"
+    data: 0
+    name: "&cFechar"
+  nobody:
+    material: "BARRIER"
+    data: 0
+    name: "&cNinguém"
+  item:
+    name: "&f%position%º &e%player%"
+    lore: "&7Crates abertas: &f%amount%"

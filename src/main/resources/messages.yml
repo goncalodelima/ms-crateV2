@@ -1,0 +1,7 @@
+no-permission: "&cVocê não possui permissão para executar este comando."
+crate-give-error: "&c'Digite /crate give <jogador> <tipo> <quantia> <virtual/fisica>'"
+invalid-player: "&cJogador inválido."
+invalid-crate: "&cCrate inválida."
+invalid-amount: "&cQuantia inválida."
+invalid-type: "&cVirtual ou Física?"
+crate-send: "&aVocê enviou as crates com sucesso."

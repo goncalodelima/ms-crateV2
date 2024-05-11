@@ -1,0 +1,7 @@
+database:
+  type: "sqlite" #mysql ou sqlite
+  user: "root"
+  password: ""
+  host: "localhost"
+  database: "test"
+  file: "plugins/MinecraftSolutions/freecrates.db"
