@@ -46,12 +46,8 @@ public class CrateController {
     }
 
     public void open(User user, Crate crate, int amount){
-
-        user.setCratesOpen(user.getCratesOpen() + amount);
-
         while (amount-- > 0)
             open(user, crate);
-
     }
 
     public void open(User user, Crate crate){
@@ -67,6 +63,7 @@ public class CrateController {
             user.getRewards().put(reward, user.getRewards().getOrDefault(reward, 0) + 1);
 
         user.getCrates().put(crate, user.getCrates().getOrDefault(crate, 0) - 1);
+        user.setCratesOpen(user.getCratesOpen() + 1);
         CratePlugin.getInstance().getUserService().update(user);
     }
 
@@ -82,6 +79,7 @@ public class CrateController {
 
         user.getRewards().put(reward, user.getRewards().getOrDefault(reward, 0) - 1);
         CratePlugin.getInstance().getUserService().update(user);
+
         if (reward.isCMD()) Bukkit.dispatchCommand(Bukkit.getConsoleSender(), reward.getCommand().replace("{player}", user.getName()));
         else user.getPlayer().getInventory().addItem(reward.getItem());
         giveReward(user, reward);
